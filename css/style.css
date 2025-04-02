@@ -1,0 +1,362 @@
+/* General Reset and Container */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* max-width: 960px; */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header - Top Navigation Bar */
+header {
+    /* We'll style the header's parts separately */
+    /* No background or padding here initially */
+    color: #333; /* Dark color for header text */
+    text-align: center;
+    height: 100vh;
+}
+
+.top-nav {
+    background-color: rgba(0, 102, 255, 0.9); /* Updated to semi-transparent blue */
+    color: #fff; /* White color for nav text */
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.top-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White color for logo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    margin-left: 1.5rem;
+}
+
+.top-nav ul li a {
+    color: #fff; /* White color for nav links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.top-nav ul li a:hover, .top-nav .logo:hover {
+    color: #00eaff; /* Lighter blue for link hover */
+}
+
+/* Header - Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0066ff, #00ccff); /* Smooth blue gradient */
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+    height: -webkit-fill-available;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: -webkit-fill-available;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.hero h1 {
+    margin: 10px;
+    font-size: 60px;
+    /* margin-bottom: 0.5rem; */
+    color: #fff; /* White color for hero heading */
+}
+
+.hero-subtitle {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: #fff; /* White color for hero subtitle */
+}
+
+.hero-intro {
+    margin: 10px;
+    font-size: 25px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #fff; /* White color for hero intro */
+}
+
+/* Main Sections - Consistent Styling */
+main section {
+    padding: 3rem 0; /* Consistent padding top and bottom */
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; /* Increased spacing under headings */
+    color: #2962ff;
+    text-align: center;
+}
+
+/* Section Backgrounds - A More Subtle Approach */
+.about-section,
+.projects-section,
+.contact-section {
+    background-color: white;
+}
+
+.skills-section,
+.certifications-section,
+.education-section {
+    background-color: #f8f9fa; /* A very light gray for subtle contrast */
+}
+
+/* Consistent Box Styling (Skills, Languages, Certifications) */
+.skill-item,
+.languages,
+.certifications-section li {
+    background-color: white;
+    padding: 1.25rem; /* Consistent padding */
+    border-radius: 8px; /* Slightly more rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 3rem 0;
+    background-color: #fff; /* Ensure a background for the grid */
+}
+
+.certifications-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+    text-align: center;
+}
+
+.certifications-grid {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust minmax for logo size */
+    gap: 20px; /* Spacing between logos */
+    align-items: center; /* Vertically align logos in the grid */
+    justify-items: center; /* Horizontally align logos in the grid */
+}
+
+.certification-logo {
+    background-color: white;
+    padding: 5px; /* Add some padding around the logo */
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    text-align: center; /* Center the image within the container */
+    max-width: 150px; /* Limit the maximum width of the logo container */
+    width: 100%; /* Make the container responsive within its grid cell */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.certification-logo img {
+    display: block; /* Remove extra space below image */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-item i {
+    font-size: 2rem;
+    color: #2962ff;
+    margin-bottom: 0.75rem; /* Added spacing below icon */
+}
+
+.skill-item h3 {
+    font-size: 1.1rem; /* Adjusted heading size */
+    margin-bottom: 0;   /* Removed extra margin */
+}
+
+/* Languages Section - Integrated Style */
+.languages {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.languages h3 {
+    font-size: 1.2rem; /* Adjusted heading size */
+    color: #2962ff;
+    margin-bottom: 1rem;
+}
+
+.languages ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages li {
+    font-size: 1rem;
+}
+
+/* Education Section */
+.education-section {
+    padding: 3rem 0;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border-left: 0.25rem solid #2962ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.education-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 3rem 0;
+}
+
+.project-item {
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.project-item h3 {
+    font-size: 1.2rem;
+    color: #2962ff;
+    margin-bottom: 0.75rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 3rem 0;
+}
+
+.certifications-section ul {
+    list-style: none;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 3rem 0;
+}
+
+.contact-details {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-details i {
+    margin-right: 0.5rem;
+    color: #2962ff;
+}
+
+/* Footer */
+footer {
+    background-color: #2962ff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .certifications-section ul {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-grid {
+        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+        gap: 10px;
+    }
+
+    .certification-logo {
+        padding: 8px;
+        max-width: 100px;
+    }
+
+    .languages ul {
+        flex-direction: column;
+    }
+}
