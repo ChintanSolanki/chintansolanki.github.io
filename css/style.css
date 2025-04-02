@@ -44,6 +44,7 @@ header {
     color: #fff; /* White color for logo */
     text-decoration: none;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .top-nav ul {
@@ -61,6 +62,7 @@ header {
     color: #fff; /* White color for nav links */
     text-decoration: none;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .top-nav ul li a:hover, .top-nav .logo:hover {
