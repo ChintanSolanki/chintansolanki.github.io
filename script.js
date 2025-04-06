@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
             navLinks.classList.remove('active');
         });
     });
+
+    updateNavLinksPosition();
+    
 });
 
 function updateNavLinksPosition() {
@@ -49,7 +52,7 @@ function updateNavLinksPosition() {
 
     if (nav && navLinks) {
         const navHeight = nav.offsetHeight;
-
+        
         // Set dynamic top and height
         navLinks.style.top = `${navHeight}px`;
         navLinks.style.height = `calc(100vh - ${navHeight}px)`;
