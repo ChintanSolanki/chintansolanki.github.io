@@ -205,6 +205,15 @@ main h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #f3f4f642;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #e0e7ff82;
 }
 
 .skill-item i {
@@ -275,6 +284,7 @@ main h2 {
     margin-bottom: 2rem;
     padding: 1.25rem;
     border-radius: 8px;
+    border-left: 0.25rem solid #2962ff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
 }
 
@@ -291,6 +301,17 @@ main h2 {
 /* Certifications Section */
 .certifications-section {
     padding: 3rem 0;
+}
+
+.certification-logo {
+    background: #f3f4f642;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.certification-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #e0e7ff82;
 }
 
 .certifications-section ul {
@@ -342,10 +363,6 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-
-    .certifications-section ul {
-        grid-template-columns: 1fr;
     }
 
     .certifications-grid {
