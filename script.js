@@ -42,3 +42,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function updateNavLinksPosition() {
+    const nav = document.getElementById('topNav');
+    const navLinks = document.getElementById('navLinks');
+
+    if (nav && navLinks) {
+        const navHeight = nav.offsetHeight;
+
+        // Set dynamic top and height
+        navLinks.style.top = `${navHeight}px`;
+        navLinks.style.height = `calc(100vh - ${navHeight}px)`;
+    }
+}
+
+// Initial call
+updateNavLinksPosition();
+
+// Optional: Update on window resize
+window.addEventListener('resize', updateNavLinksPosition);
