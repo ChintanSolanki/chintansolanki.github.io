@@ -260,7 +260,7 @@ main h2 {
 }
 
 .skill-item h3 {
-    font-size: 1.1rem; /* Adjusted heading size */
+    font-size: initial; /* Adjusted heading size */
     margin-bottom: 0;   /* Removed extra margin */
 }
 
