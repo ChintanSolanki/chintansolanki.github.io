@@ -130,11 +130,6 @@ header {
 
 @media (max-width: 430px) {
 
-    .top-nav .logo, .nav-links {
-        -webkit-tap-highlight-color: transparent;
-        outline: none;
-    }
-
     .hero h1 {
         margin: 10px;
         font-size: 40px;
@@ -517,4 +512,9 @@ footer {
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5.5px, -5.5px);
     }
+}
+
+.top-nav .logo, .nav-links, .hamburger {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
