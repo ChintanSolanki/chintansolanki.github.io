@@ -54,7 +54,6 @@ function updateNavLinksPosition() {
         const navHeight = nav.offsetHeight;
         // Set dynamic top and height
         navLinks.style.top = `${navHeight}px`;
-        navLinks.style.height = `calc(100vh - ${navHeight}px)`;
     }
 }
 

@@ -483,7 +483,6 @@ footer {
         right: 0;
         background-color: rgba(0, 102, 255, 0.95);
         width: 200px;
-        height: calc(100vh - 60px);
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
