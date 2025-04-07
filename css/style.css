@@ -135,6 +135,17 @@ header {
         color: #fff; /* White color for hero heading */
     }
 
+    .hero h1 .name-highlight{
+        display: block;
+        font-size: 30px;
+        padding: 10px 0px;
+    }
+
+    .hero-content {
+        flex: 1;
+        padding: 0.5rem;
+    }
+
     .hero-subtitle {
         margin: 10px;
         font-size: 25px;
