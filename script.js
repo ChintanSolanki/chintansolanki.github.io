@@ -48,10 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function updateNavLinksPosition() {
     const nav = document.getElementById('topNav');
-    const navLinks = document.getElementById('navLinks');
+    const navLinks = document.querySelector('.navLinks.active');
 
     if (nav && navLinks) {
         const navHeight = nav.offsetHeight;
+        // Set dynamic top and height
+        navLinks.style.top = `${navHeight}px`;
+        navLinks.style.height = `calc(100vh - ${navHeight}px)`;
     }
 }
 
