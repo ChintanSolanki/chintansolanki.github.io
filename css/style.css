@@ -110,14 +110,12 @@ header {
 .hero h1 {
     margin: 10px;
     font-size: 60px;
-    /* margin-bottom: 0.5rem; */
     color: #fff; /* White color for hero heading */
 }
 
 .hero-subtitle {
     margin: 10px;
-    font-size: 1.5rem;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 1rem;
     color: #fff; /* White color for hero subtitle */
 }
@@ -128,6 +126,29 @@ header {
     line-height: 1.8;
     margin-bottom: 2rem;
     color: #fff; /* White color for hero intro */
+}
+
+@media (max-width: 430px) {
+    .hero h1 {
+        margin: 10px;
+        font-size: 40px;
+        color: #fff; /* White color for hero heading */
+    }
+
+    .hero-subtitle {
+        margin: 10px;
+        font-size: 25px;
+        margin-bottom: 1rem;
+        color: #fff; /* White color for hero subtitle */
+    }
+
+    .hero-intro {
+        margin: 10px;
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        color: #fff; /* White color for hero intro */
+    }
 }
 
 .resume-button {
