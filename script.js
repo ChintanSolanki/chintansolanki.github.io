@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    updateNavLinksPosition();
-    
+    // Add delay of 100ms
+    setTimeout(updateNavLinksPosition, 100);    
 });
 
 function updateNavLinksPosition() {
