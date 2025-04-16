@@ -261,6 +261,14 @@ main h2 {
     height: auto; /* Maintain image aspect ratio */
 }
 
+@media (max-width: 430px) {
+
+    .certification-logo img {
+        max-width: 80%; /* Ensure image doesn't exceed container width */
+    }
+
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
