@@ -261,14 +261,6 @@ main h2 {
     height: auto; /* Maintain image aspect ratio */
 }
 
-@media (max-width: 430px) {
-
-    .certification-logo {
-        max-width: 80%; /* Ensure image doesn't exceed container width */
-    }
-
-}
-
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -478,7 +470,7 @@ footer {
 
     .certification-logo {
         padding: 8px;
-        max-width: 100px;
+        max-width: 80px;
     }
 
     .languages ul {
