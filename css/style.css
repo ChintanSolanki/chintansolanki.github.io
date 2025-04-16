@@ -263,7 +263,7 @@ main h2 {
 
 @media (max-width: 430px) {
 
-    .certification-logo img {
+    .certification-logo {
         max-width: 80%; /* Ensure image doesn't exceed container width */
     }
 
